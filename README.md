@@ -1,6 +1,5 @@
-# CodeForge 🔨
-
 <div align="center">
+<img src="frontend/public/logo1.png" alt="CodeForge Logo" width="200"/>
 
 ![CodeForge Banner](https://img.shields.io/badge/CodeForge-AI%20Code%20Generator-blue?style=for-the-badge)
 
@@ -12,71 +11,69 @@
 
 **An AI-powered full-stack development platform that transforms natural language into production-ready web applications**
 
-[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [Architecture](#-architecture) • [Contributing](#-contributing)
-
 </div>
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Architecture](#-architecture)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Usage](#-usage)
-- [API Reference](#-api-reference)
-- [Project Structure](#-project-structure)
-- [Development](#-development)
-- [Deployment](#-deployment)
-- [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [API Reference](#api-reference)
+- [Project Structure](#project-structure)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## 🌟 Overview
+## Overview
 
 **CodeForge** is a sophisticated AI-powered development platform that enables developers to generate complete, production-ready web applications through natural language prompts. Leveraging state-of-the-art language models (GPT-4o and Claude Sonnet 4), CodeForge intelligently creates React/Next.js applications with proper component architecture, styling, and functionality.
 
 ### What Makes CodeForge Different?
 
-- **🎨 Production-Ready Code**: Generates complete applications using shadcn/ui components and Tailwind CSS
-- **🔄 Real-Time Preview**: Instant visual feedback with live code execution in isolated sandboxes
-- **🤖 Multi-Model Support**: Choose between OpenAI GPT-4o and Anthropic Claude Sonnet 4
-- **💬 Conversational Development**: Iterative refinement through natural conversation
-- **🏗️ Smart Architecture**: Intelligent file structuring, component composition, and dependency management
-- **⚡ E2B Sandbox Integration**: Safe, isolated code execution environment with full Node.js support
+- **Production-Ready Code**: Generates complete applications using shadcn/ui components and Tailwind CSS
+- **Real-Time Preview**: Instant visual feedback with live code execution in isolated sandboxes
+- **Multi-Model Support**: Choose between OpenAI GPT-4o and Anthropic Claude Sonnet 4
+- **Conversational Development**: Iterative refinement through natural conversation
+- **Smart Architecture**: Intelligent file structuring, component composition, and dependency management
+- **E2B Sandbox Integration**: Safe, isolated code execution environment with full Node.js support
 
 ---
 
-## ✨ Features
+## Features
 
 ### Core Capabilities
 
-- **🚀 Instant App Generation**: Transform ideas into complete web applications in seconds
-- **📝 Natural Language Interface**: Describe what you want in plain English
-- **🎯 Framework-Aware**: Understands Next.js, React, and modern web development patterns
-- **🎨 Beautiful UI by Default**: Automatically integrates shadcn/ui components with polished designs
-- **📱 Responsive Design**: Mobile-first, accessible interfaces out of the box
-- **🔧 Live Code Editing**: Real-time code preview and execution
-- **💾 Session Management**: Persistent conversations with context retention
-- **🖥️ Interactive Terminal**: Execute shell commands within the sandbox environment
+- **Instant App Generation**: Transform ideas into complete web applications in seconds
+- **Natural Language Interface**: Describe what you want in plain English
+- **Framework-Aware**: Understands Next.js, React, and modern web development patterns
+- **Beautiful UI by Default**: Automatically integrates shadcn/ui components with polished designs
+- **Responsive Design**: Mobile-first, accessible interfaces out of the box
+- **Live Code Editing**: Real-time code preview and execution
+- **Session Management**: Persistent conversations with context retention
+- **Interactive Terminal**: Execute shell commands within the sandbox environment
 
 ### Developer Experience
 
-- **📦 Automatic Dependency Management**: Smart package.json generation with required dependencies
-- **🔍 Intelligent Code Parsing**: Extracts and organizes generated artifacts
-- **🎭 Multi-Provider Support**: Switch between GPT-4o and Claude Sonnet 4 on the fly
-- **📊 Streaming Responses**: Real-time AI response streaming for better UX
-- **🛡️ Error Handling**: Comprehensive error boundaries and graceful degradation
-- **🔄 Hot Reload**: Instant feedback during development
+- **Automatic Dependency Management**: Smart package.json generation with required dependencies
+- **Intelligent Code Parsing**: Extracts and organizes generated artifacts
+- **Multi-Provider Support**: Switch between GPT-4o and Claude Sonnet 4 on the fly
+- **Streaming Responses**: Real-time AI response streaming for better UX
+- **Error Handling**: Comprehensive error boundaries and graceful degradation
+- **Hot Reload**: Instant feedback during development
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -106,7 +103,7 @@
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 CodeForge follows a modern, scalable architecture with clear separation of concerns:
 
@@ -164,7 +161,7 @@ CodeForge follows a modern, scalable architecture with clear separation of conce
 
 ---
 
-## 📥 Installation
+## Installation
 
 ### Prerequisites
 
@@ -241,7 +238,7 @@ cp .env.example .env.local  # Optional
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Backend Configuration
 
@@ -290,7 +287,7 @@ app.add_middleware(
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Starting the Application
 
@@ -360,7 +357,7 @@ The frontend will be available at `http://localhost:3000`
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 ### POST `/api/generate`
 
@@ -446,7 +443,7 @@ Execute shell commands in the sandbox.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 codeforge/
@@ -495,7 +492,7 @@ codeforge/
 
 ---
 
-## 💻 Development
+## Development
 
 ### Backend Development
 
@@ -569,7 +566,7 @@ npx shadcn@latest add card
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 ### Backend Deployment (FastAPI)
 
@@ -645,7 +642,7 @@ npm run build
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -709,7 +706,7 @@ Error: Sandbox creation timeout
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Here's how you can help:
 
@@ -756,22 +753,22 @@ We welcome contributions! Here's how you can help:
 
 ### Areas for Contribution
 
-- 🐛 Bug fixes
-- ✨ New features (AI models, UI improvements)
-- 📝 Documentation improvements
-- 🎨 UI/UX enhancements
-- 🧪 Test coverage
-- 🌍 Internationalization
+- Bug fixes
+- New features (AI models, UI improvements)
+- Documentation improvements
+- UI/UX enhancements
+- Test coverage
+- Internationalization
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **OpenAI** - For the powerful GPT-4o model
 - **Anthropic** - For Claude Sonnet 4
@@ -782,7 +779,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-## 📞 Contact
+## Contact
 
 **Project Maintainer**: [@idboussadel](https://github.com/idboussadel)
 
@@ -792,8 +789,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 <div align="center">
 
-**Made with ❤️ by developers, for developers**
+**Made with love by developers, for developers**
 
-⭐ Star this repo if you find it helpful!
+Star this repo if you find it helpful!
 
 </div>
