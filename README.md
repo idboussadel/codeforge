@@ -1,7 +1,7 @@
 <div align="center">
-[![codeforge](htt<img width="2693" height="425" alt="logo1" src="https://github.com/user-attachments/assets/1032ded3-5f44-4c8b-8b51-8eebd0c2f9a7" />
+<img width="400" alt="logo1" src="https://github.com/user-attachments/assets/1032ded3-5f44-4c8b-8b51-8eebd0c2f9a7" />
 
-ps://img.shields.io/badge/Next.js-16.0-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
