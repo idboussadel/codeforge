@@ -45,6 +45,9 @@
 - **Smart Architecture**: Intelligent file structuring, component composition, and dependency management
 - **E2B Sandbox Integration**: Safe, isolated code execution environment with full Node.js support
 
+E2B sandboxes example :
+<img width="1919" height="898" alt="image" src="https://github.com/user-attachments/assets/2a4d36a4-b527-4b76-a434-9aefe96d5e74" />
+
 ---
 
 ## Features
