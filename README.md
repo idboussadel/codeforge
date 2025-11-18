@@ -1,5 +1,5 @@
 <div align="center">
-<img width="400" alt="logo1" src="https://github.com/user-attachments/assets/1032ded3-5f44-4c8b-8b51-8eebd0c2f9a7" />
+<img width="500" alt="logo1" src="https://github.com/user-attachments/assets/1032ded3-5f44-4c8b-8b51-8eebd0c2f9a7" />
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
