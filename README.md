@@ -1,7 +1,5 @@
 <div align="center">
-<img src="frontend/public/logo1.png" alt="CodeForge Logo" width="200"/>
-
-![CodeForge Banner](https://img.shields.io/badge/CodeForge-AI%20Code%20Generator-blue?style=for-the-badge)
+<img src="frontend/public/logo1.png" alt="CodeForge Logo" width="300"/>
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -36,7 +34,7 @@
 
 ## Overview
 
-**CodeForge** is a sophisticated AI-powered development platform that enables developers to generate complete, production-ready web applications through natural language prompts. Leveraging state-of-the-art language models (GPT-4o and Claude Sonnet 4), CodeForge intelligently creates React/Next.js applications with proper component architecture, styling, and functionality.
+**CodeForge** is a sophisticated AI-powered development platform that enables developers to generate complete, production-ready web applications through natural language prompts ( its like a [Bolt](https://bolt.com) clone ). Leveraging state-of-the-art language models (GPT-4o and Claude Sonnet 4), CodeForge intelligently creates React/Next.js applications with proper component architecture, styling, and functionality.
 
 ### What Makes CodeForge Different?
 
@@ -109,26 +107,26 @@ CodeForge follows a modern, scalable architecture with clear separation of conce
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        User Interface                        │
-│                    (Next.js + React)                         │
+│                        User Interface                       │
+│                    (Next.js + React)                        │
 └────────────────────┬────────────────────────────────────────┘
                      │
                      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    Frontend Application                      │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
-│  │ Chat Panel   │  │Preview Panel │  │  Terminal    │      │
-│  │  Component   │  │  Component   │  │  Component   │      │
-│  └──────────────┘  └──────────────┘  └──────────────┘      │
+│                    Frontend Application                     │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │ Chat Panel   │  │Preview Panel │  │  Terminal    │       │
+│  │  Component   │  │  Component   │  │  Component   │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
 └────────────────────┬────────────────────────────────────────┘
                      │ HTTP/WebSocket
                      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    FastAPI Backend                           │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
-│  │   API        │  │   Prompts    │  │  Services    │      │
-│  │  Endpoints   │  │   Engine     │  │   Layer      │      │
-│  └──────────────┘  └──────────────┘  └──────────────┘      │
+│                    FastAPI Backend                          │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │   API        │  │   Prompts    │  │  Services    │       │
+│  │  Endpoints   │  │   Engine     │  │   Layer      │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
 └────┬────────────────────┬────────────────────┬──────────────┘
      │                    │                    │
      ▼                    ▼                    ▼
