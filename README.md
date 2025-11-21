@@ -10,8 +10,7 @@
 **An AI-powered full-stack development platform that transforms natural language into production-ready web applications**
 
 </div>
-
-https://github.com/user-attachments/assets/43aeee16-cda1-4480-82e2-ad6c22b7917c
+<video src="[https://yourcdn.com/demo.mp4](https://github.com/user-attachments/assets/43aeee16-cda1-4480-82e2-ad6c22b7917c" controls></video>
 
 ---
 
