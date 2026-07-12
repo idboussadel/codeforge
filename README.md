@@ -19,6 +19,9 @@
 
 ---
 
+https://github.com/user-attachments/assets/31b0f8ef-22d1-4da2-848d-90da132b8940
+
+
 CodeForge is an AI coding workbench. You describe what you want in natural language; a LangGraph agent plans, writes files, runs commands, and verifies the result inside an isolated E2B sandbox — while you follow every step in a Cursor-style interface.
 
 No code generation in chat bubbles. Real files. Real terminal. Real preview.
