@@ -1,48 +1,30 @@
 .conda
 .vscode
+node_modules
+.pnpm-store
+.turbo
+*.db
+data/
 
 # Python
-backend/__pycache__/
-backend/*.pyc
-backend/.env
-backend/venv/
-backend/.pytest_cache/
+apps/api/venv/
+apps/api/__pycache__/
+apps/api/**/__pycache__/
+*.pyc
 
-frontend/node_modules
-frontend/.pnp
-frontend/.pnp.*
-frontend/.yarn/*
-!frontend/.yarn/patches
-!frontend/.yarn/plugins
-!frontend/.yarn/releases
-!frontend/.yarn/versions
+# Next.js
+apps/web/.next/
+apps/web/out/
+apps/web/node_modules/
 
-# testing
-frontend/coverage
+# Single monorepo env (secrets)
+.env
+.env.local
+.env.*.local
 
-# next.js
-frontend/.next/
-frontend/out/
+# Debug
+*.log
 
-# production
-frontend/build
-
-# misc
-frontend/.DS_Store
-frontend/*.pem
-
-# debug
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
-frontend/.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-frontend/.env*
-
-# vercel
-frontend/.vercel
-
-# typescript
-frontend/*.tsbuildinfo
-frontend/next-env.d.ts
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
