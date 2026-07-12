@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="340" alt="CodeForge" src="apps/web/public/logo1.png" />
+<img width="360" alt="CodeForge" src="apps/web/public/logo1.png" />
 
 **Describe an app. Watch an agent build it — live.**
 
@@ -34,12 +34,12 @@ No code generation in chat bubbles. Real files. Real terminal. Real preview.
 
 ## Stack
 
-| Layer | Tech |
-|-------|------|
-| Web | Next.js 16, React 19, Tailwind 4, shadcn/ui, Monaco |
-| API | FastAPI, SQLAlchemy + SQLite, SSE streaming |
-| Agent | LangGraph, DeepSeek (`langchain-deepseek`) |
-| Runtime | E2B code interpreter sandboxes |
+| Layer   | Tech                                                |
+| ------- | --------------------------------------------------- |
+| Web     | Next.js 16, React 19, Tailwind 4, shadcn/ui, Monaco |
+| API     | FastAPI, SQLAlchemy + SQLite, SSE streaming         |
+| Agent   | LangGraph, DeepSeek (`langchain-deepseek`)          |
+| Runtime | E2B code interpreter sandboxes                      |
 
 ## Architecture
 
@@ -93,29 +93,29 @@ Open [http://localhost:3000](http://localhost:3000), describe an app, and follow
 
 ## Environment
 
-| Variable | Description |
-|----------|-------------|
-| `DEEPSEEK_API_KEY` | DeepSeek API key |
-| `E2B_API_KEY` | E2B sandbox API key |
-| `E2B_TEMPLATE` | Sandbox template (default: `code-interpreter-v1`) |
-| `MODEL` | LLM model (default: `deepseek-chat`) |
-| `CORS_ORIGIN` | Allowed web origin (default: `http://localhost:3000`) |
-| `NEXT_PUBLIC_API_URL` | API base URL for the web app |
+| Variable              | Description                                           |
+| --------------------- | ----------------------------------------------------- |
+| `DEEPSEEK_API_KEY`    | DeepSeek API key                                      |
+| `E2B_API_KEY`         | E2B sandbox API key                                   |
+| `E2B_TEMPLATE`        | Sandbox template (default: `code-interpreter-v1`)     |
+| `MODEL`               | LLM model (default: `deepseek-chat`)                  |
+| `CORS_ORIGIN`         | Allowed web origin (default: `http://localhost:3000`) |
+| `NEXT_PUBLIC_API_URL` | API base URL for the web app                          |
 
 ## API
 
-| Method | Path | Purpose |
-|--------|------|---------|
-| `GET` | `/api/sessions` | List sessions |
-| `POST` | `/api/sessions` | Create session (+ optional first message) |
-| `GET` | `/api/sessions/:id` | Session state + UI messages (with tool blocks) |
-| `POST` | `/api/sessions/:id/run` | Resume agent on last user message (SSE) |
-| `POST` | `/api/sessions/:id/messages` | New user turn (SSE) |
-| `POST` | `/api/sessions/:id/abort` | Stop running agent |
-| `GET` | `/api/sessions/:id/files` | Project file tree from sandbox |
-| `GET` | `/api/sessions/:id/files/:path` | Read file content |
-| `GET` | `/api/sessions/:id/preview` | Ensure dev server; return preview URL |
-| `POST` | `/api/sessions/:id/terminal` | Run shell command in sandbox |
+| Method | Path                            | Purpose                                        |
+| ------ | ------------------------------- | ---------------------------------------------- |
+| `GET`  | `/api/sessions`                 | List sessions                                  |
+| `POST` | `/api/sessions`                 | Create session (+ optional first message)      |
+| `GET`  | `/api/sessions/:id`             | Session state + UI messages (with tool blocks) |
+| `POST` | `/api/sessions/:id/run`         | Resume agent on last user message (SSE)        |
+| `POST` | `/api/sessions/:id/messages`    | New user turn (SSE)                            |
+| `POST` | `/api/sessions/:id/abort`       | Stop running agent                             |
+| `GET`  | `/api/sessions/:id/files`       | Project file tree from sandbox                 |
+| `GET`  | `/api/sessions/:id/files/:path` | Read file content                              |
+| `GET`  | `/api/sessions/:id/preview`     | Ensure dev server; return preview URL          |
+| `POST` | `/api/sessions/:id/terminal`    | Run shell command in sandbox                   |
 
 SSE events: `status`, `text`, `tool_start`, `tool_end`, `preview`, `files_changed`, `done`, `error`.
 
