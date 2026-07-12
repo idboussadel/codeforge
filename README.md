@@ -1,15 +1,19 @@
 <div align="center">
 
-<img width="120" alt="CodeForge" src="apps/web/public/logo1.png" />
-
-# CodeForge
+<img width="340" alt="CodeForge" src="apps/web/public/logo1.png" />
 
 **Describe an app. Watch an agent build it — live.**
 
-[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![LangGraph](https://img.shields.io/badge/LangGraph-ReAct-1C3C3C?style=flat-square)](https://langchain-ai.github.io/langgraph/)
-[![E2B](https://img.shields.io/badge/E2B-Sandbox-000?style=flat-square)](https://e2b.dev/)
+![VERSION](https://img.shields.io/badge/VERSION-2.0-F38020?style=for-the-badge&labelColor=333333)
+[![NODE](https://img.shields.io/badge/NODE-20+-339933?style=for-the-badge&logo=node.js&logoColor=white&labelColor=333333)](https://nodejs.org/)
+[![PYTHON](https://img.shields.io/badge/PYTHON-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=333333)](https://www.python.org/)
+
+[![NEXT.JS](https://img.shields.io/badge/NEXT.JS-16-000000?style=for-the-badge&logo=next.js&logoColor=white&labelColor=333333)](https://nextjs.org/)
+[![REACT](https://img.shields.io/badge/REACT-19-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=333333)](https://react.dev/)
+[![FASTAPI](https://img.shields.io/badge/FASTAPI-0.115+-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=333333)](https://fastapi.tiangolo.com/)
+[![LANGGRAPH](https://img.shields.io/badge/LANGGRAPH-ReAct-1C3C3C?style=for-the-badge&labelColor=333333)](https://langchain-ai.github.io/langgraph/)
+[![DEEPSEEK](https://img.shields.io/badge/DEEPSEEK-Chat-4D6BFE?style=for-the-badge&labelColor=333333)](https://platform.deepseek.com/)
+[![E2B](https://img.shields.io/badge/E2B-Sandbox-FF4785?style=for-the-badge&labelColor=333333)](https://e2b.dev/)
 
 </div>
 
