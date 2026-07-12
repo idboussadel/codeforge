@@ -123,15 +123,23 @@ export function PreviewPanel({
 
   const ensurePreviewRunning = useCallback(
     async (force = false) => {
-      if (!force && ensureRef.current) return ensureRef.current;
+      if (!force && ensureRef.current) {
+        setPreviewLoading(true);
+        return ensureRef.current;
+      }
 
       const task = (async () => {
-        if (!previewUrl || force) setPreviewLoading(true);
+        setPreviewLoading(true);
         setPreviewError(null);
         try {
           const result = await ensurePreview(sessionId);
           if (result.preview_url) {
             onPreviewUrl?.(result.preview_url);
+            if (iframeRef.current) {
+              // ponytail: force iframe reload even when URL unchanged
+              iframeRef.current.src = "";
+              iframeRef.current.src = result.preview_url;
+            }
           } else if (result.status === "error") {
             onPreviewUrl?.(null);
             setPreviewError(result.output ?? "Failed to start dev server");
@@ -149,7 +157,7 @@ export function PreviewPanel({
       ensureRef.current = task;
       return task;
     },
-    [sessionId, previewUrl, onPreviewUrl],
+    [sessionId, onPreviewUrl],
   );
 
   useEffect(() => {
@@ -171,8 +179,10 @@ export function PreviewPanel({
   useEffect(() => {
     if (activeTab !== "demo") return;
     if (filePaths.length === 0) return;
+    // ponytail: tab switch only fetches when we have no URL yet; use reload for re-check
+    if (previewUrl) return;
     void ensurePreviewRunning();
-  }, [activeTab, filePaths.length, ensurePreviewRunning]);
+  }, [activeTab, filePaths.length, previewUrl, ensurePreviewRunning]);
 
   useEffect(() => {
     ensureRef.current = null;
@@ -261,10 +271,11 @@ export function PreviewPanel({
                   </div>
                   <button
                     onClick={() => void ensurePreviewRunning(true)}
-                    className="flex h-9 w-9 items-center justify-center rounded-lg border bg-white hover:bg-gray-50"
+                    disabled={previewLoading}
+                    className="flex h-9 w-9 items-center justify-center rounded-lg border bg-white hover:bg-gray-50 disabled:opacity-50"
                     title="Refresh preview"
                   >
-                    <RefreshCw className="h-4 w-4" />
+                    <RefreshCw className={`h-4 w-4 ${previewLoading ? "animate-spin" : ""}`} />
                   </button>
                   <a
                     href={previewUrl}
@@ -343,14 +354,27 @@ export function PreviewPanel({
               </div>
             </TabsContent>
 
-            <TabsContent value="demo" className="m-0 min-h-0 flex-1 overflow-hidden">
+            <TabsContent value="demo" className="relative m-0 min-h-0 flex-1 overflow-hidden">
               {previewUrl ? (
-                <iframe
-                  ref={iframeRef}
-                  src={previewUrl}
-                  className="h-full w-full border-0"
-                  title="Preview"
-                />
+                <>
+                  <iframe
+                    ref={iframeRef}
+                    src={previewUrl}
+                    className="h-full w-full border-0"
+                    title="Preview"
+                  />
+                  {previewLoading && (
+                    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-white/90 text-muted-foreground">
+                      <Loader2 className="mb-3 h-10 w-10 animate-spin opacity-40" />
+                      <p>Starting dev server...</p>
+                    </div>
+                  )}
+                  {previewError && !previewLoading && (
+                    <p className="absolute bottom-4 left-1/2 z-10 max-w-md -translate-x-1/2 rounded border border-red-200 bg-white px-3 py-2 text-xs text-red-600">
+                      {previewError}
+                    </p>
+                  )}
+                </>
               ) : (
                 <div className="flex h-full items-center justify-center text-muted-foreground">
                   <div className="space-y-3 text-center">
